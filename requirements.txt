@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+pulp
+scipy
+plotly
+supabase
+google-generativeai
