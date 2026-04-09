@@ -43,9 +43,8 @@ model_gemini = initialize_secure_model()
 
 #Page COnfiguration
 st.set_page_config(page_title="Marketplace Optimizer", layout="wide")
-st.title("Marketplace Optimización & IA")
 st.markdown("""
-###
+### Marketplace Optimización & IA
 El objetivo de la aplicación es **maximizar la eficiencia operativa** en entornos de delivery (Marketplace de 3 partes). 
 
 #### 🎯 ¿Cómo funciona?
