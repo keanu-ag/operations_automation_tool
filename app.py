@@ -44,6 +44,22 @@ model_gemini = initialize_secure_model()
 #Page COnfiguration
 st.set_page_config(page_title="Marketplace Optimizer", layout="wide")
 st.title("Marketplace Optimización & IA")
+st.markdown("""
+###
+El objetivo de la aplicación es **maximizar la eficiencia operativa** en entornos de delivery (Marketplace de 3 partes). 
+
+#### 🎯 ¿Cómo funciona?
+El sistema toma un conjunto de pedidos y una flota de repartidores distribuidos geográficamente para encontrar la **asignación óptima** que minimice la distancia total recorrida.
+
+#### 🛠️ ¿Cómo se usa?
+1.  **Configura** la cantidad de pedidos y repartidores en la barra lateral.
+2.  **Ejecuta** la optimización para visualizar las rutas sugeridas en el mapa interactivo.
+3.  **Analiza** las recomendaciones estratégicas generadas por la IA (Gemini) basadas en los resultados del modelo.
+
+#### 📊 Método de Optimización
+La aplicación utiliza **Linear Programming** mediante la librería `PuLP`. El modelo matemático resuelve un *Problema de Asignación de Costo Mínimo*, garantizando que se cumplan las restricciones de capacidad de cada socio repartidor mientras se encuentra la solución global más eficiente.
+""")
+st.divider()
 
 #Optimization Model
 def run_optimization(n_orders, n_couriers):
